@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: #ecf2f8;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    margin: 0;
+  }
+}
+.hero .container {
+  display: flex;
+  flex-flow: row;
+  width: 820px;
+  background-color: white;
+  border-radius: 20px;
+  height: 315px;
+}
+@media screen and (max-width: 900px) {
+  .hero .container {
+    max-width: 600px;
+    display: block;
+    height: auto;
+    width: 90%;
+  }
+}
+.hero .container .img {
+  flex: 45%;
+  order: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .img {
+    border-radius: 20px 20px 0 0 !important;
+    flex: 35% !important;
+  }
+}
+.hero .container .img img {
+  width: 122%;
+  border-radius: 20px 0 0 20px;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .img img {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+  }
+}
+.hero .container .content {
+  padding: 35px 50px;
+  flex: 55%;
+  order: 2;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .content {
+    padding: 20px 25px;
+    flex: 65% !important;
+  }
+}
+.hero .container .content h1 {
+  font-size: 22px;
+  color: #48556a;
+  font-weight: 700;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .content h1 {
+    font-size: 17px;
+  }
+}
+.hero .container .content p {
+  font-size: 13px;
+  padding: 20px 0;
+  letter-spacing: 0.9px;
+  color: #6d7f97;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .content p {
+    font-size: 12px;
+  }
+}
+.hero .container .content .profile {
+  display: flex;
+  flex-flow: row;
+}
+.hero .container .content .profile figure {
+  max-width: 50px;
+  flex: auto;
+  order: 1;
+}
+.hero .container .content .profile figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+.hero .container .content .profile .name {
+  flex: auto;
+  order: 2;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 20px;
+}
+.hero .container .content .profile .name h4 {
+  color: #48556a;
+  font-size: 14px;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .content .profile .name h4 {
+    font-size: 12px;
+  }
+}
+.hero .container .content .profile .name p {
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 900px) {
+  .hero .container .content .profile .name p {
+    font-size: 10px;
+  }
+}
+.hero .container .content .profile .social {
+  position: relative;
+  flex: auto;
+  order: 3;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero .container .content .profile .social .share {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ecf2f8;
+}
+.hero .container .content .profile .social .share:hover {
+  color: white;
+  background-color: #9eafc2;
+  cursor: pointer;
+}
+
+#social__tooltip {
+  position: absolute;
+  bottom: 78px;
+  right: -78px;
+  background-color: #48556a;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  #social__tooltip {
+    bottom: -20px;
+    right: -25px;
+    width: 273px;
+    padding: 25px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+#social__tooltip h3 {
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-size: 13px;
+}
+#social__tooltip i {
+  margin: 0 7px;
+}
+
+.oculto {
+  opacity: 0;
+  visibility: hidden;
+  z-index: -10;
+}
+
+.mostrar {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+}
+
+svg {
+  margin-left: 50px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #6d7f97;
+  padding: 7px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 900px) {
+  svg {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+svg path {
+  fill: white;
+}
+
+/*# sourceMappingURL=main.css.map */
